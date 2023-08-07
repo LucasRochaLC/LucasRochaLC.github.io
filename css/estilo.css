@@ -1,0 +1,98 @@
+/*General*/
+html, body, #home{
+    height: 100%;
+    overflow-x: hidden;
+}
+body{
+    padding: 0;
+    margin: 0;
+    background: linear-gradient(0deg, rgba(27,91,85,1) 0%, rgba(3,33,89,1) 86%);
+    color: white;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+/*Nav*/
+.navbar{
+    background-color: black;
+}
+/*Main*/
+#main-content{
+    margin-top: 20px;
+    padding-top: 10px;
+}
+/*contact*/
+#btn-container{
+    text-align: center;
+    margin: 15px 0 15px 0;
+}
+.btn-contact{
+    border-color: white;
+    color: white;
+    border-radius: 30px;
+}
+.btn-contact:hover{
+    border-color: white;
+    background-color: white;
+    color: black;
+    border-radius: 30px;
+}
+/*skill*/
+#main-skills{
+    border-top: 3px solid ;
+}
+#main-skills h3{
+    padding: 5px 0 0 10px;
+    margin: 10px 0 15px 0;
+}
+#skill-container{
+    background: rgba(0, 0, 0, 0.226);
+    border-radius: 15px;
+    margin-bottom: 50px;
+}
+.card-skill{
+    padding: 20px;
+    margin: auto;
+}
+.card-skill img{
+    width: 80px;
+}
+.card-skill h4{
+    line-height: 65px;
+    padding-left: 10px;
+}
+/*Footer*/
+footer{
+    background: black;
+    height: 30px;
+}
+/*Media Queries*/
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+    
+}
+/* Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .btn-contact{
+        margin: 0 30px 0 30px;
+    }
+}
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) { 
+    .btn-contact{
+        margin: 0 30px 0 30px;
+    }
+}
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .btn-contact{
+        margin: 0 30px 0 30px;
+    }
+}
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    .btn-contact{
+        margin: 0 30px 0 30px;
+    }
+}
