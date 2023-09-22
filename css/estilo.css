@@ -30,7 +30,7 @@ a{
     margin: 15px 0 15px 0;
 }
 .btn-contact{
-    border-color: white;
+    border: 2px solid white;
     color: white;
     border-radius: 30px;
 }
@@ -41,18 +41,18 @@ a{
     border-radius: 30px;
 }
 /*skill*/
-#main-skills{
-    border-top: 3px solid ;
-}
-#main-skills h3{
-    padding: 5px 0 0 10px;
-    margin: 10px 0 15px 0;
-}
-#skill-container{
+/*#main-skills{
     background: rgba(0, 0, 0, 0.226);
     border-radius: 15px;
     margin-bottom: 50px;
 }
+#main-skills h3{
+    padding: 20px 0 15px 15px;
+    margin: 30px 0 15px 0;
+    background: rgba(0, 0, 0, 0.632);
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}*/
 .card-skill{
     padding: 20px;
     margin: auto;
@@ -64,15 +64,68 @@ a{
     line-height: 65px;
     padding-left: 10px;
 }
+.card-container{
+    background: rgba(0, 0, 0, 0.226);
+    border-radius: 15px;
+    margin-bottom: 50px;
+}
+.card-container h3{
+    padding: 20px 0 15px 15px;
+    margin: 30px 0 15px 0;
+    background: rgba(0, 0, 0, 0.632);
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+/*project*/
+.container-media{
+    width: 180px;
+    height: 150px;
+    border: 2px solid rgb(21, 21, 21);
+    border-radius: 15px;
+    overflow: hidden;
+    margin: auto;
+    background-color: rgba(61, 61, 61, 0.115);
+}
+.container-media:hover{
+    transition: .2s;
+    background-color: rgba(32, 32, 32, 0.888);
+}
+.container-media img{
+    width: 100%;
+    border-bottom: 2px solid rgb(21, 21, 21);
+}
+.container-media img:hover{
+    transition: .2s;
+    opacity: 0.5;
+}
+.container-media p{
+    text-align: center;
+    padding-top: 6px;
+}
+.project-link:hover{
+    text-decoration: none;
+    color: white;
+}
 /*Footer*/
 footer{
     background: black;
-    height: 30px;
+    height: 30px; 
 }
 /*Media Queries*/
 /* Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
-    
+    .container-media{
+        height: 120px;
+        width: 400px;
+    }
+    .container-media img{
+        width: 230px;
+        border-right: 2px solid rgb(21, 21, 21);
+        float: left;
+    }
+    .container-media p{
+        padding-top: 20px;
+    }
 }
 /* Small devices (landscape phones, 576px and up)*/
 @media (min-width: 576px) and (max-width: 767.98px) {
@@ -91,10 +144,18 @@ footer{
     .btn-contact{
         margin: 0 30px 0 30px;
     }
+    .container-media{
+        width: 220px;
+        height: 160px;
+    }
 }
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
     .btn-contact{
         margin: 0 30px 0 30px;
+    }
+    .container-media{
+        width: 300px;
+        height: 210px;
     }
 }
