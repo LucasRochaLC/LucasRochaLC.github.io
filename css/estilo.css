@@ -115,16 +115,11 @@ footer{
 /* Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
     .container-media{
-        height: 120px;
-        width: 400px;
+        height: 220px;
+        width: 90%;
     }
     .container-media img{
-        width: 230px;
-        border-right: 2px solid rgb(21, 21, 21);
-        float: left;
-    }
-    .container-media p{
-        padding-top: 20px;
+        width: 100%px;
     }
 }
 /* Small devices (landscape phones, 576px and up)*/
